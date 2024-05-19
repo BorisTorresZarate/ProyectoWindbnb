@@ -1,0 +1,27 @@
+.card-item {
+    border: solid 1px black;
+}
+
+.card-item>figure {
+    width: 100%;
+}
+
+.card-item>figure>img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.title-card-item {
+    display: flex;
+    justify-content: space-between;
+}
+.title-card-item>h4:nth-child(2) >p:nth-child(2) >h6:nth-child(2){
+    align-self: center;
+}
+.title-card-item>h4>p>h6 {
+    border: solid 1px black;
+    background-color: aqua;
+    flex-basis: 0;
+    flex-grow: 1;
+}
