@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { CardList } from "./Components/Card"
 import { Nav } from "./Components/Nav"
+import { Modal } from "./Components/Modal"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
       <div className="conteiner">
+        <Modal />
         <Nav />
         <CardList data={data} filteredData={filteredData} setFilteredData={setFilteredData} />
         <div className="modal">

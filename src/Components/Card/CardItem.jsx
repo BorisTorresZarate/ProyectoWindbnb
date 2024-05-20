@@ -10,7 +10,7 @@ export function CardItem({ data: { id, ciudad, pais, superAnfitrion, titulo, cla
                 <h4>{/* {superAnfitrion} */}Super Host</h4>
                 <p>{tipo}</p>
                 <p>{camas}beds</p>
-                <h6>{clasificacion}</h6>
+                <h6><img src="../images/estrella.png" alt="estrella" />{clasificacion}</h6>
             </div>
             <h3>{titulo}</h3>
         </li>
