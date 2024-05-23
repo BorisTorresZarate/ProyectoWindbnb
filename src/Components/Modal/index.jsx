@@ -26,7 +26,7 @@ export function Modal({ setIsOpen, data, setFilteredData }) {
                         <label htmlFor="search-location">
                             <span>Location</span>
                         </label>
-                        <select className='search-location' id="search-location" value={selectedLocation} onChange={(e) => setSelectedLocation(e.target.value)}>
+                        <select  id="search-location" value={selectedLocation} onChange={(e) => setSelectedLocation(e.target.value)}>
                             <option value=""> Locations</option>
                             <option value="Helsinki">Helsinki</option>
                             <option value="Turku">Turku</option>

@@ -13,7 +13,7 @@
 }
 .modal-content nav{
     display: grid;
-    height: 64px;
+    height: auto;
     box-shadow: rgba( 67, 71, 85, 0.27) 0px 0px 0.25em, rgba( 90, 125, 188, 0.05) 0px 0.25em 1em;
     border-radius: .5rem;
     grid-template-columns: 1fr 1fr .5fr;
@@ -24,10 +24,19 @@
     flex-direction: column;
     padding: 1rem 2rem;
 }
-.search-location input, .search-guest input{
+.search-location>select{
     flex-grow: 1;
     height: 100%;
     gap: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+} 
+.search-guest input{
+    flex-grow: 1;
+    height: 100%;
+    gap: 1rem;
+    border-radius: 20px;
     outline: none;
     border: none;
 }
