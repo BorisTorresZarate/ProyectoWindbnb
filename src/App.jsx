@@ -8,6 +8,7 @@ import { Modal } from "./Components/Modal"
 function App() {
   const [data, setData] = useState()
   const [filteredData, setFilteredData] = useState()
+  const [isOpen, setIsOpen] = useState(false)
   async function getData() {
     const rs = await fetch('./stays.json')
     const rsjson = await rs.json()
@@ -36,12 +37,11 @@ function App() {
   return (
     <>
       <div className="conteiner">
-        <Modal />
-        <Nav />
+        {isOpen &&
+          <Modal setIsOpen={setIsOpen} data={data} setFilteredData={setFilteredData}/>
+        }
+        <Nav setIsOpen={() => setIsOpen(true)} filterData={filteredData} setFilteredData={setFilteredData} />
         <CardList data={data} filteredData={filteredData} setFilteredData={setFilteredData} />
-        <div className="modal">
-
-        </div>
       </div>
     </>
   )

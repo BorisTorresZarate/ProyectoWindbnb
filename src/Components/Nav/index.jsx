@@ -1,5 +1,6 @@
 import './Nav.css'
-export function Nav({ciudad,pais}) {
+export function Nav({ setIsOpen, data, setFilteredData }) {
+    
     return (
         <div className='conteiner-nav'>
             <div className='conteiner-logo'>
@@ -9,9 +10,9 @@ export function Nav({ciudad,pais}) {
                 <span>windbnb</span>
             </div>
             <nav className="search-nav">
-                <button className="search-button">
+                <button className="search-button" onClick={setIsOpen}>
                     <span>Helsinki, Finland</span>
-                    <span>Id</span>
+                    <span>Add Guests</span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 24 24"

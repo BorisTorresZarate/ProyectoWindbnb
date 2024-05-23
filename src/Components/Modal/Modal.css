@@ -2,6 +2,63 @@
     width: 100%;
     min-height: 100lvh;
     height: 100%;
-    position: absolute;
+    position: fixed;
     background-color: rgba(128, 128, 128, 0.279);
+}
+.modal-content{
+    padding: 2rem;
+    background-color: white;
+    height: 45vh;
+    width: 100%;
+}
+.modal-content nav{
+    display: grid;
+    height: 64px;
+    box-shadow: rgba( 67, 71, 85, 0.27) 0px 0px 0.25em, rgba( 90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: .5rem;
+    grid-template-columns: 1fr 1fr .5fr;
+    place-content: center;
+}
+.search-location, .search-guest{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.search-location input, .search-guest input{
+    flex-grow: 1;
+    height: 100%;
+    gap: 1rem;
+    outline: none;
+    border: none;
+}
+.search-location:focus-within{
+    border: 1px solid rgba(210, 210, 210, 0.529);
+    border-radius: 20px;
+}
+.search-guest:focus-within{
+    border: 1px solid rgba(210, 210, 210, 0.529);
+    border-radius: 20px;
+}
+.filter-button{
+    width: 140px;
+    background-color: rgb(179, 43, 43);
+    border: none;
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(211, 36, 36);
+    }
+    &:active{
+        background-color: rgb(197, 73, 73);
+    }
+}
+.modal-content svg{
+    width: 28px;
+    color: wheat;
 }

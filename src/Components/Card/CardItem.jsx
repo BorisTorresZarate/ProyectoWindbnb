@@ -7,9 +7,8 @@ export function CardItem({ data: { id, ciudad, pais, superAnfitrion, titulo, cla
                 <img src={foto} alt="" />
             </figure>
             <div className='title-card-item'>
-                <h4>{/* {superAnfitrion} */}Super Host</h4>
-                <p>{tipo}</p>
-                <p>{camas}beds</p>
+                {superAnfitrion && <h4>SUPER HOST</h4>}
+                <p>{tipo} {camas ? `${camas}.beds` : ''}</p>
                 <h6><img src="../images/estrella.png" alt="estrella" />{clasificacion}</h6>
             </div>
             <h3>{titulo}</h3>

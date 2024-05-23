@@ -5,3 +5,18 @@
     justify-content: center;
     list-style: none;
 }
+.titulo-card{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo-card h1{
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+}
+.titulo-card p{
+    margin-right: 8rem;
+    margin-bottom: 6rem;
+}
